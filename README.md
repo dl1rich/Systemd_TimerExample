@@ -39,7 +39,7 @@ Requires=dl_backup.service
 
 [Timer]
 Unit=dl_backup.service
-OnCalendar=*-*-* *:*:00
+OnCalendar=*-*-* *:*:00    # runs every 1 min, change to your needs
 Persistent=true
 
 [Install]
