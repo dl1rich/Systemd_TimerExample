@@ -11,7 +11,7 @@ Systemd files live in ```/etc/systemd/system/```
 1. Create a service file
 2. Create a timer file
 3. Create a dummy file or script to run (edit on service file at ExecStart)
-4. Hook up the timer and service file with systemd. 
+4. Hook up the timer and service file with systemd. (Start / Enable)
 
 dl_backup.service (file)
 
