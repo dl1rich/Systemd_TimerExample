@@ -45,3 +45,44 @@ Persistent=true
 [Install]
 WantedBy=timers.target
 ```
+
+## Install the service and timer. 
+
+```
+# Reload the files in the daemon /etc/systemd/system
+sudo systemctl deamon-reload
+
+# Start the service
+sudo systemctl start dl_backup.service
+
+# Start the timer for the service
+sudo systemctl start dl_backup.service
+
+```
+
+## Extras
+
+```bash
+# Load the new file
+sudo systemctl daemon-reload
+
+# Start your service
+sudo systemctl start dl_backup.service
+
+# To check the status of your service
+sudo systemctl status dl_backup.service
+sudo systemctl status dl_backup.timer 
+
+# To enable your service on every reboot
+sudo systemctl enable dl_backup.service
+
+# To disable your service on every reboot
+sudo systemctl disable dl_backup.service
+```
+
+Watch service in real time 
+```bash 
+journalctl -S today -f -u dl_backup.service
+```
+
+
