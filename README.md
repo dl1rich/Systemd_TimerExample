@@ -15,7 +15,7 @@ Systemd files live in ```/etc/systemd/system/```
 
 dl_backup.service (file)
 
-```bash
+```ini
 [Unit]
 Description=Backup service for DefenceLogic backup scripts
 Wants=dl_backup.timer
@@ -32,7 +32,7 @@ WantedBy=multi-user.target
 
 dl_backup.timer (file)
 
-```bash
+```ini
 [Unit]
 Description=Run dl Backup daily
 Requires=dl_backup.service
