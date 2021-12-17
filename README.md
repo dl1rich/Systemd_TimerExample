@@ -91,4 +91,5 @@ journalctl -S today -f -u dl_backup.service
 Extra infos. 
 ```
 https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+https://opensource.com/article/20/7/systemd-timers
 ```
